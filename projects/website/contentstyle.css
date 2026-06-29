@@ -1,0 +1,257 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+	background-image:url("images/sunset.jpg");
+    /*background-color:#000235;*/
+	
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+}
+.quote{
+    margin-top: 70px;
+    font-size: 58px;
+    color: white;
+}
+.main{
+    display: flex;
+    flex-direction:row;
+    margin: 0 ;
+    padding:0;
+    align-items: flex-start;
+    width:1510px;
+}
+.sidebar{
+    background-color:#000235;
+    padding:0;
+    border: 1px solid #000235;
+    margin: 0;
+    width: 200px;
+    height: 2500px;
+    flex-shrink: 0; /* Prevents sidebar from shrinking */
+    align-self: flex-start;
+    position: relative; /* Ensures it stays within the flow */
+    left: 0;
+    justify-content: space-between;
+    margin-top: 0px;
+
+}
+.sidebarlinks{
+    height: 50px;
+    width: 200px ;
+    background-color: #000235;
+    border-radius: 0;
+    text-align:center;
+    padding-bottom: 5px;
+    padding-top:10px;
+}
+.sidebarlinks:hover{
+    background-color: #020567;
+}
+.sidebarlinks a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+.Content {
+    flex-grow: 1; /* Ensures it takes the remaining space */
+    padding-left: 20px; /* Adds space between sidebar and content */
+    width:2200px;
+    
+}
+.heading{
+    text-align: center;
+    margin:15px;
+    margin-bottom: 60px;
+}
+#firstcontent,#secondcontent,#thirdcontent,#forthcontent,#fifthcontent,#sixthcontent{
+    height:250px ;
+    width: 950px;
+    border-radius:3% ;
+    margin: 15px;
+    margin-bottom: 40px;;
+    margin-left: 150px;
+    padding: 15px;
+    display:flex;
+    padding:10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    background-color:#000235c0;
+    
+}
+.care,.mission,.impact,.change,.howcanhelp,.partners,.makedifference{
+    color: rgb(73, 192, 244);
+    font-size: 40px;
+    text-align: left;
+    margin:8px;
+    margin-bottom: 15px;
+}
+
+.imager{
+    width:370px;
+    height: 250px;
+    margin-left:80px;
+    margin-top: 0;
+    align-content: flex-end;
+}
+.imagel{
+    width:400px;
+    height: 370px;
+    margin-top: 0;
+ 
+}
+.initiatives{
+    font-size:20px;
+    color: beige;
+}
+.ul{
+    color:white;
+    font-size: 20px;
+    margin:10px;
+}
+#secondcontent{
+    height:470px;
+}
+#thirdcontent,#forthcontent{
+    height:350px;
+}
+#fifthcontent{
+    text-align: center;
+    height:300px;
+}
+
+
+.mission{
+    text-align: center;
+}
+.cards{
+    display:flex;
+}
+.card{
+    border:1px solid black;
+    width:280px;
+    height:350px;
+    margin:10px;
+    background-color:#03041f ;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+}
+.cardimg{
+    width:280px;
+    height:250px;
+}
+.name{
+    color: rgb(26, 145, 196);
+    font-size: 20px;
+}
+.description{
+    font-size: 15px;
+    color: white;
+}
+.detail h3{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.impact{
+    text-align: center;
+    font-size: 50px;
+}
+#thirdcontent li{
+    text-align: left;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.change{
+    text-align: center;
+    font-size: 45px;
+}
+.howcanhelp{
+    text-align:left;
+    font-size: 30px;
+}
+.imaget{
+    width:400px;
+    height: 300px;
+    margin-top: 0; 
+}
+.partners{
+    text-align: center;
+}
+.partnerimg{
+    height: 150px;
+    width: 150px;
+}
+#fifthcontent h3{
+    font-size: 15px;
+}
+.partnerlogo{
+    margin:15px;
+    margin-left: 30px;
+
+}
+.makedifference{
+    text-align:center;
+    font-size: 60px;
+}
+#sixthcontent p{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:20px;
+}
+.joinnow a{
+    height: 40px;
+    width: 200px;
+    margin-top: 50px;
+    margin: 20px;
+    padding:10px;
+    background-color: rgb(50, 125, 223);
+    font-size: 25px;
+    text-align: center;
+    border-radius: 0;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.joinnow a:hover{
+    background-color:rgba(50, 125, 223, 0.788);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button-container a{
+    color: white;
+}
+.button-container a:link{
+   text-decoration: none;
+
+}
+.scroll-up{
+    all: unset;
+    position: fixed;
+    bottom: 25px;
+    right: 30px;
+    height: 40px;
+    width: 100px;
+    background-color: rgb(18, 40, 179);
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.scroll-up:hover{
+    background-color:rgb(48, 73, 232) ;
+}
+.scroll-up a{
+    text-decoration: none;
+    color: white;
+}

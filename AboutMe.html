@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me — Chanuki Hettiarachchi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="particles-canvas"></canvas>
+<div class="loader" id="loader"><div class="loader-ring"></div><span class="loader-text">Loading...</span></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<header id="header">
+  <a href="main.html"><img src="photos/logo.png" class="logo" alt="logo"></a>
+  <nav>
+    <div class="links">
+      <a href="main.html"     class="nav-link">Home</a>
+      <a href="AboutMe.html"  class="nav-link active">About Me</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="contact.html"  class="nav-link">Contact</a>
+    </div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+    <div class="dropdown">
+      <a href="main.html">Home</a>
+      <a href="AboutMe.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="aboutme-page">
+
+  <!-- ── ABOUT INTRO ── -->
+  <section class="about-intro">
+    <h1 class="section-heading rv-up">About <span class="gradient-text">Me</span></h1>
+    <div class="about-grid">
+
+      <!-- profile card -->
+      <div class="profile-card rv-left">
+        <div class="profile-photo-box">
+          <img src="photos/my-photo.png" alt="Chanuki Hettiarachchi">
+        </div>
+        <div class="info-row"><i class="fas fa-birthday-cake"></i><div><h4>Birthday</h4><p>04 April 2004</p></div></div>
+        <div class="info-row"><i class="fas fa-map-marker-alt"></i><div><h4>City</h4><p>Kaduwela, Sri Lanka</p></div></div>
+        <div class="info-row"><i class="fas fa-envelope"></i><div><h4>Email</h4><p>Chanukisemini.me@gmail.com</p></div></div>
+        <div class="info-row"><i class="fas fa-graduation-cap"></i><div><h4>Degree</h4><p>BSc (Hons) Computer Science</p><p>BSc Information and Communication Technology</p></div></div>
+      </div>
+
+      <!-- intro text -->
+      <div class="about-text rv-right">
+        <div class="eyebrow">Who I am</div>
+        <h3>I'm <span class="gradient-text">Chanuki Hettiarachchi</span></h3>
+        <p>A dedicated Computer Science student with a strong passion for software development, web technologies, and emerging fields such as quantum computing. Throughout my academic journey, I have taken on challenging projects that range from developing interactive web applications to exploring the latest trends in information technology.</p>
+        <p>Pursuing two degrees has strengthened my ability to balance multiple responsibilities, stay organised, and manage my time effectively. My long-term goal is to establish a leading software company in Sri Lanka that drives digital transformation and inspires the next generation of developers.</p>
+        <a href="contact.html" class="btn btn-gold" style="margin-top:2rem"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION TIMELINE ── -->
+  <section class="edu-section">
+    <h1 class="section-heading rv-up">Education <span class="gradient-text">Timeline</span></h1>
+    <div class="timeline">
+      <div class="tl-item rv-left">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <span class="tl-year">2024 – Present</span>
+          <h3>BSc (Hons) Computer Science</h3>
+          <p class="tl-inst">Informatics Institute of Technology (IIT)</p>
+          <p class="tl-sub">Affiliated with University of Westminster, UK</p>
+        </div>
+      </div>
+      <div class="tl-item right rv-right">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <span class="tl-year">2025 – Present</span>
+          <h3>BSc (Hons) Physical Science in ICT</h3>
+          <p class="tl-inst">University of Sri Jayawardanapura</p>
+        </div>
+      </div>
+      <div class="tl-item rv-left">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <span class="tl-year">2023</span>
+          <h3>GCE Advanced Level</h3>
+          <p class="tl-inst">Gothami Balika Vidyalaya</p>
+          <p class="tl-sub">1B 2C — Maths Stream with ICT</p>
+        </div>
+      </div>
+      <div class="tl-item right rv-right">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <span class="tl-year">2020</span>
+          <h3>GCE Ordinary Level</h3>
+          <p class="tl-inst">Gothami Balika Vidyalaya</p>
+          <p class="tl-sub">9 A's — Outstanding Achievement</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS + INTERESTS ── -->
+  <div class="skills-interests">
+
+    <section>
+      <h1 class="section-heading rv-up">My <span class="gradient-text">Skills</span></h1>
+      <div class="skill-list">
+        <div class="rv-up">
+          <div class="skill-header"><span><i class="fab fa-html5"></i>HTML</span><span class="skill-pct">90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="rv-up" style="animation-delay:.1s">
+          <div class="skill-header"><span><i class="fab fa-css3-alt"></i>CSS</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="rv-up" style="animation-delay:.2s">
+          <div class="skill-header"><span><i class="fab fa-js"></i>JavaScript</span><span class="skill-pct">70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+        <div class="rv-up" style="animation-delay:.3s">
+          <div class="skill-header"><span><i class="fab fa-java"></i>Java</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+        <div class="rv-up" style="animation-delay:.4s">
+          <div class="skill-header"><span><i class="fab fa-python"></i>Python</span><span class="skill-pct">65%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+        </div>
+        <div class="rv-up" style="animation-delay:.5s">
+          <div class="skill-header"><span><i class="fab fa-figma"></i>Figma</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+
+        <div class="rv-up" style="animation-delay:.6s">
+          <div class="skill-header"><span><i class="fab fa-react"></i>React</span><span class="skill-pct">60%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+        </div>
+
+        <div class="rv-up" style="animation-delay:.7s">
+          <div class="skill-header"><span><i class="fab fa-git-alt"></i>Git & GitHub</span><span class="skill-pct">65%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1 class="section-heading rv-up">My <span class="gradient-text">Interests</span></h1>
+      <div class="interest-list">
+
+        <div class="int-card rv-up">
+          <div class="int-img">
+            <img src="photos/coading.jpeg" alt="Coding">
+            <div class="int-overlay"><i class="fas fa-code"></i></div>
+          </div>
+          <div class="int-body">
+            <h3>Coding</h3>
+            <p>I love turning ideas into functional software solutions. Coding lets me solve problems and build things that make an impact.</p>
+          </div>
+        </div>
+
+        <div class="int-card rv-up" style="animation-delay:.1s">
+          <div class="int-img">
+            <img src="photos/travel.jpeg" alt="Traveling">
+            <div class="int-overlay"><i class="fas fa-plane"></i></div>
+          </div>
+          <div class="int-body">
+            <h3>Traveling</h3>
+            <p>Exploring new places inspires my creativity and broadens my perspective. Each journey teaches me something new about culture and the world.</p>
+          </div>
+        </div>
+
+        <div class="int-card rv-up" style="animation-delay:.2s">
+          <div class="int-img">
+            <img src="photos/sing.jpg" alt="Singing">
+            <div class="int-overlay"><i class="fas fa-music"></i></div>
+          </div>
+          <div class="int-body">
+            <h3>Singing</h3>
+            <p>Singing helps me express emotions and find balance beyond the digital world. It's my way to unwind and connect with others through music.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div><!-- /skills-interests -->
+
+</div><!-- /aboutme-page -->
+
+<footer>
+  <div class="footer-inner">
+    <p>Author: <span>Chanuki Semini</span></p>
+    <p>&copy; 2025 All rights reserved</p>
+    <div class="footer-socials">
+      <a href="www.linkedin.com/in/chanuki-semini" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/ChanukiSemini" class="social-btn"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/_.chanu_04._?igsh=ZmQ0YnA2ODhsZDVt&utm_source=qr" class="social-btn"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

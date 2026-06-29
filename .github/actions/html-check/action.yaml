@@ -1,0 +1,26 @@
+name: "HTML Portfolio Check"
+description: "Checks and lists all HTML files in the portfolio"
+
+inputs:
+  project_name:
+    required: true
+    description: "Name of the portfolio project"
+
+outputs:
+  result:
+    description: "Check result message"
+
+runs:
+  using: "composite"
+  steps:
+    - name: List portfolio files
+      run: echo "result=Checking portfolio ${{ inputs.project_name }}" >> $GITHUB_OUTPUT
+      shell: bash
+
+    - name: Show all HTML files
+      run: ls *.html
+      shell: bash
+
+    - name: Count HTML files
+      run: echo "Found $(ls *.html | wc -l) HTML files"
+      shell: bash

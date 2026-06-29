@@ -1,0 +1,27 @@
+name: HTML Portfolio CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run HTML Portfolio Check
+        uses: ./.github/actions/html-check
+        with:
+          project_name: "Chanuki Portfolio"
+
+      - name: Check HTML files exist
+        run: ls -la *.html
+
+      - name: Check CSS file exists
+        run: ls -la *.css
+
+      - name: Check JS file exists
+        run: ls -la *.js

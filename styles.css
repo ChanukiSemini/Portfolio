@@ -1,13 +1,10 @@
-/* ================================================================
-   CHANUKI PORTFOLIO — styles.css v3
-   Fonts : Playfair Display (headings) + DM Sans (body)
-   Theme : Dark space, gold accent, glass cards
-   Fixed : all image sizing, overlaps, layout bugs
-   ================================================================ */
+/*
+   CHANUKI PORTFOLIO — styles.css
+  */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,700&display=swap');
 
-/* ── tokens ── */
+
 :root {
   --gold:        #EFD40A;
   --gold-lt:     #FFE84A;
@@ -76,9 +73,7 @@ body {
   z-index:1;
 }
 
-/* ================================================================
-   HEADER
-   ================================================================ */
+/* HEADER */
 header {
   position:fixed; top:0; left:0; right:0;
   height:var(--hh);
@@ -132,9 +127,7 @@ header.scrolled { background:rgba(7,7,10,.97); box-shadow:0 4px 28px rgba(0,0,0,
 .dropdown a:hover { color:var(--gold); padding-left:8%; }
 #menu-toggle:checked ~ .dropdown { transform:translateY(0); opacity:1; pointer-events:auto; }
 
-/* ================================================================
-   SHARED HELPERS
-   ================================================================ */
+/* SHARED HELPERS */
 section, .home, .aboutme-page, .project-page, .Contact-page { position:relative; z-index:2; }
 
 .section-heading {
@@ -159,6 +152,7 @@ section, .home, .aboutme-page, .project-page, .Contact-page { position:relative;
   margin-bottom:1.6rem;
 }
 
+
 /* buttons */
 .btn {
   display:inline-flex; align-items:center; gap:.8rem;
@@ -172,6 +166,7 @@ section, .home, .aboutme-page, .project-page, .Contact-page { position:relative;
 .btn-gold:hover { background:var(--gold-lt); transform:translateY(-3px); box-shadow:var(--glow); }
 .btn-outline { background:transparent; color:var(--gold); border:2px solid var(--gold); }
 .btn-outline:hover { background:var(--gold); color:var(--bg); transform:translateY(-3px); box-shadow:var(--glow); }
+
 
 /* social icon buttons */
 .social-btn {
@@ -193,9 +188,9 @@ section, .home, .aboutme-page, .project-page, .Contact-page { position:relative;
 .rv-right { transform:translateX(46px); }
 .rv-up.in, .rv-left.in, .rv-right.in { opacity:1; transform:none; }
 
-/* ================================================================
-   HOME PAGE
-   ================================================================ */
+
+
+/* HOME PAGE */
 .home {
   min-height:100vh;
   padding:calc(var(--hh) + 7rem) 8% 7rem;
@@ -267,7 +262,6 @@ section, .home, .aboutme-page, .project-page, .Contact-page { position:relative;
 
 
 
-
 /* floating tech badges */
 .fbadge {
   position: absolute; z-index: 3;
@@ -285,24 +279,13 @@ section, .home, .aboutme-page, .project-page, .Contact-page { position:relative;
 
 /* HTML — 0° */
 .fbadge-1 { left: 50%;    top: -15%;   animation: float-center 3s ease-in-out infinite 0s;   }
-
-/* CSS — 51° */
 .fbadge-2 { left: 115%;   top: 25%;    animation: float 3s ease-in-out infinite 0.43s;  }
-
-/* JS — 103° */
 .fbadge-3 { left: 120%;   top: 60%;    animation: float 3s ease-in-out infinite 0.86s;  }
-
-/* GitHub — 154° */
 .fbadge-4 { left: 100%;   top: 100%;   animation: float 3s ease-in-out infinite 1.29s;  }
-
-/* React — 206° */
 .fbadge-5 { left: 12%;    top: 110%;   animation: float 3s ease-in-out infinite 1.72s;  }
-
-/* Python — 257° */
 .fbadge-6 { left: -20%;   top: 60%;    animation: float 3s ease-in-out infinite 2.15s;  }
-
-/* Figma — 309° */
 .fbadge-7 { left: -15%;   top: 14%;    animation: float 3s ease-in-out infinite 2.58s;  }
+
 
 /* float for side badges */
 @keyframes float {
@@ -342,9 +325,10 @@ section, .home, .aboutme-page, .project-page, .Contact-page { position:relative;
 }
 .stat-lbl { display:block; font-size:1.25rem; color:var(--muted); margin-top:.7rem; font-weight:500; }
 
-/* ================================================================
-   ABOUT PAGE
-   ================================================================ */
+
+
+
+/* ABOUT PAGE */
 .aboutme-page { padding-top:var(--hh); }
 
 /* ── about intro ── */
@@ -368,9 +352,7 @@ section, .home, .aboutme-page, .project-page, .Contact-page { position:relative;
 }
 .profile-card:hover { border-color:rgba(239,212,10,.2); }
 
-/* ── PROFILE PHOTO in card ──
-   Show the illustration centred, no circular crop,
-   extra width so the dress hem is visible               */
+/* PROFILE PHOTO in card  */
 .profile-photo-box {
   width:100%;
   aspect-ratio:3/4;             /* portrait proportions */
@@ -503,9 +485,7 @@ section, .home, .aboutme-page, .project-page, .Contact-page { position:relative;
 .int-body h3 { font-size:1.65rem; font-weight:700; margin-bottom:.55rem; }
 .int-body p  { font-size:1.32rem; color:var(--muted); line-height:1.72; }
 
-/* ================================================================
-   PROJECTS PAGE
-   ================================================================ */
+/*  PROJECTS PAGE */
 .project-page {
   padding-top:calc(var(--hh) + 6rem);
   padding-bottom:7rem;
@@ -585,9 +565,9 @@ section, .home, .aboutme-page, .project-page, .Contact-page { position:relative;
 }
 .proj-ul li::before { content:'▸'; position:absolute; left:0; color:var(--gold); }
 
-/* ================================================================
-   CONTACT PAGE
-   ================================================================ */
+
+
+/* CONTACT PAGE */
 .Contact-page {
   padding-top:calc(var(--hh) + 6rem);
   padding-bottom:7rem;
@@ -678,9 +658,11 @@ section, .home, .aboutme-page, .project-page, .Contact-page { position:relative;
 }
 .form-success i { font-size:1.9rem; }
 
-/* ================================================================
-   FOOTER
-   ================================================================ */
+
+
+
+
+/* FOOTER */
 footer {
   position:relative; z-index:2;
   background:var(--surface);
@@ -695,9 +677,7 @@ footer p { font-size:1.38rem; color:var(--muted); }
 footer p span { color:var(--gold); font-weight:600; }
 .footer-socials { display:flex; gap:1rem; }
 
-/* ================================================================
-   RESPONSIVE
-   ================================================================ */
+/*RESPONSIVE */
 @media (max-width:1100px) {
   .home {
     flex-direction:column; text-align:center;

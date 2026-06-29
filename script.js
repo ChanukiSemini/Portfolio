@@ -1,4 +1,4 @@
-/* Chanuki Portfolio — script.js v3 */
+/* script.js */
 
 document.addEventListener('DOMContentLoaded', () => {
 

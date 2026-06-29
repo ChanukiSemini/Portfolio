@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Chanuki Hettiarachchi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="particles-canvas"></canvas>
+<div class="loader" id="loader"><div class="loader-ring"></div><span class="loader-text">Loading...</span></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<header id="header">
+  <a href="main.html"><img src="photos/logo.png" class="logo" alt="logo"></a>
+  <nav>
+    <div class="links">
+      <a href="main.html"     class="nav-link">Home</a>
+      <a href="AboutMe.html"  class="nav-link">About Me</a>
+      <a href="projects.html" class="nav-link active">Projects</a>
+      <a href="contact.html"  class="nav-link">Contact</a>
+    </div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+    <div class="dropdown">
+      <a href="main.html">Home</a>
+      <a href="AboutMe.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="project-page">
+
+  <div class="proj-intro rv-up">
+    <div class="eyebrow">Portfolio</div>
+    <h1 class="section-heading">My <span class="gradient-text">Works</span></h1>
+    <p>Each project reflects my creativity, problem-solving skills and passion for learning. From building software solutions to exploring new ideas, I enjoy turning concepts into real, working results.</p>
+  </div>
+
+  <div class="proj-list">
+
+<!-- Project 1 — StyloQ -->
+<div class="proj-card rv-up" style="animation-delay:.45s">
+  <div class="proj-img">
+    <img src="photos/Styloq.png" alt="StyloQ Barber App">
+    <div class="proj-overlay">
+      <a href="https://www.figma.com/design/Zg3QWq7Ai97rXomd0Grq3s/Barber-booking-experience--Community-?node-id=0-1&t=ez08tnwkOPCfXHKt-1" class="overlay-link"><i class="fas fa-figma"></i> View Design</a>
+    </div>
+  </div>
+  <div class="proj-info">
+    <div class="proj-tags">
+      <span class="tag">Figma</span>
+      <span class="tag">React</span>
+      <span class="tag">CSS</span>
+      <span class="tag">UI/UX</span>
+    </div>
+    <h2>StyloQ — Barber App</h2>
+    <ul class="proj-ul">
+      <li>Designed complete UI/UX prototype for all pages using Figma</li>
+      <li>Implemented all barber-facing pages including dashboard, profile management and appointment tracking</li>
+      <li>Built job vacancy features using React and custom CSS</li>
+      <li>Contributed to functional and compatibility testing documentation</li>
+    </ul>
+    <a href="https://www.figma.com/design/Zg3QWq7Ai97rXomd0Grq3s/Barber-booking-experience--Community-?node-id=0-1&t=ez08tnwkOPCfXHKt-1" class="btn btn-gold"><i class="fas fa-eye"></i> View Project</a>
+  </div>
+</div>
+
+<!-- Project 2 — Java Sales Management System -->
+<div class="proj-card rv-up" style="animation-delay:.6s">
+  <div class="proj-img">
+    <img src="photos/JavaSalesManagementSystem.png" alt="Sales Management System">
+    <div class="proj-overlay">
+      <a href="projects/Sales system screenshots.pdf" class="overlay-link"><i class="fas fa-file-pdf"></i> View Report</a>
+    </div>
+  </div>
+  <div class="proj-info">
+    <div class="proj-tags">
+      <span class="tag">Java</span>
+      <span class="tag">JavaFX</span>
+      <span class="tag">MySQL</span>
+      <span class="tag">MVC</span>
+    </div>
+    <h2>Sales Management System</h2>
+    <ul class="proj-ul">
+      <li>Built a retail sales system with secure login, product management and automatic invoice generation</li>
+      <li>Designed 6 interactive screens using Java Swing with real-time sales calculations</li>
+      <li>Connected Java application to MySQL database using MVC and DAO architecture</li>
+      <li>Implemented normalized database schema in 3NF with stored procedures and views</li>
+    </ul>
+    <a href="projects/Sales system screenshots.pdf" class="btn btn-gold"><i class="fas fa-file-pdf"></i> View Report</a>
+  </div>
+</div>
+
+    <!-- Project 3 -->
+    <div class="proj-card rv-up">
+      <div class="proj-img">
+        <img src="photos/websiteProject.png" alt="UnderWater Conservation Website">
+        <div class="proj-overlay">
+          <a href="projects/website/volunteer.html" class="overlay-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+        </div>
+      </div>
+      <div class="proj-info">
+        <div class="proj-tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+        <h2>UnderWater Website</h2>
+        <ul class="proj-ul">
+          <li>Designed & developed a full underwater conservation website</li>
+          <li>Built splash screen, volunteer page & marine content page</li>
+          <li>Added preloader and smooth page redirection</li>
+          <li>Integrated multimedia content on ocean pollution</li>
+        </ul>
+        <a href="projects/website/volunteer.html" class="btn btn-gold"><i class="fas fa-eye"></i> View Project</a>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="proj-card rv-up" style="animation-delay:.15s">
+      <div class="proj-img">
+        <img src="photos/JavaProject.png" alt="Traffic Data Analysis System">
+        <div class="proj-overlay">
+          <a href="projects/JavaProject.pdf" class="overlay-link"><i class="fas fa-file-pdf"></i> View PDF</a>
+        </div>
+      </div>
+      <div class="proj-info">
+        <div class="proj-tags">
+          <span class="tag">Java</span><span class="tag">Data Analysis</span><span class="tag">CSV</span>
+        </div>
+        <h2>Traffic Data Analysis System</h2>
+        <ul class="proj-ul">
+          <li>Developed a system to process and visualise CSV-based traffic data</li>
+          <li>Implemented data validation for accuracy and consistency</li>
+          <li>Generated histograms and graphical vehicle trend reports</li>
+          <li>Analysed peak traffic hours for management insights</li>
+        </ul>
+        <a href="projects/JavaProject.pdf" class="btn btn-gold"><i class="fas fa-file-pdf"></i> View Report</a>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="proj-card rv-up" style="animation-delay:.3s">
+      <div class="proj-img">
+        <img src="photos/portfolio.png" alt="Portfolio Website">
+        <div class="proj-overlay">
+          <a href="main.html" class="overlay-link"><i class="fas fa-globe"></i> View Live</a>
+        </div>
+      </div>
+      <div class="proj-info">
+        <div class="proj-tags">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">UX Design</span>
+        </div>
+        <h2>Portfolio Website</h2>
+        <ul class="proj-ul">
+          <li>Designed and developed a personal portfolio using HTML & CSS</li>
+          <li>Created a responsive layout with smooth navigation</li>
+          <li>Showcased skills, projects, and personal interests</li>
+          <li>Focused on user-friendly UX and modern colour theme</li>
+        </ul>
+        <a href="main.html" class="btn btn-gold"><i class="fas fa-globe"></i> View Live</a>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <p>Author: <span>Chanuki Semini</span></p>
+    <p>&copy; 2025 All rights reserved</p>
+    <div class="footer-socials">
+      <a href="www.linkedin.com/in/chanuki-semini" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/ChanukiSemini" class="social-btn"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/_.chanu_04._?igsh=ZmQ0YnA2ODhsZDVt&utm_source=qr" class="social-btn"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

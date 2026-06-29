@@ -18,10 +18,28 @@ jobs:
           project_name: "Chanuki Portfolio"
 
       - name: Check HTML files exist
-        run: ls -la *.html
+        run: |
+          if ls *.html 1> /dev/null 2>&1; then
+            echo " HTML files found:"
+            ls -la *.html
+          else
+            echo " No HTML files yet — will be added in next push"
+          fi
 
       - name: Check CSS file exists
-        run: ls -la *.css
+        run: |
+          if ls *.css 1> /dev/null 2>&1; then
+            echo " CSS files found"
+            ls -la *.css
+          else
+            echo " No CSS files yet"
+          fi
 
       - name: Check JS file exists
-        run: ls -la *.js
+        run: |
+          if ls *.js 1> /dev/null 2>&1; then
+            echo " JS files found"
+            ls -la *.js
+          else
+            echo " No JS files yet"
+          fi

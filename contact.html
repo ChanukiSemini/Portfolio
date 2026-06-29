@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Chanuki Hettiarachchi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="particles-canvas"></canvas>
+<div class="loader" id="loader"><div class="loader-ring"></div><span class="loader-text">Loading...</span></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<header id="header">
+  <a href="main.html"><img src="photos/logo.png" class="logo" alt="logo"></a>
+  <nav>
+    <div class="links">
+      <a href="main.html"     class="nav-link">Home</a>
+      <a href="AboutMe.html"  class="nav-link">About Me</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="contact.html"  class="nav-link active">Contact</a>
+    </div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+    <div class="dropdown">
+      <a href="main.html">Home</a>
+      <a href="AboutMe.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<div class="Contact-page">
+
+  <div class="contact-hero rv-up">
+    <div class="eyebrow">Let's Talk</div>
+    <h1 class="section-heading">Contact <span class="gradient-text">Me</span></h1>
+    <p>If you'd like to get in touch, feel free to send me a message. I'd love to hear from you!</p>
+  </div>
+
+  <div class="contact-grid">
+
+    <!-- sidebar -->
+    <aside class="contact-sidebar rv-left">
+      <div class="contact-photo">
+        <img src="photos/my-photo.png" alt="Chanuki Hettiarachchi">
+      </div>
+      <div class="cinfo-row">
+        <div class="cinfo-icon"><i class="fas fa-envelope"></i></div>
+        <div class="cinfo-text"><h4>Email</h4><p>chanukiSemini.me@gmail.com</p></div>
+      </div>
+      <div class="cinfo-row">
+        <div class="cinfo-icon"><i class="fas fa-phone"></i></div>
+        <div class="cinfo-text"><h4>Phone</h4><p>+94 776 798 039</p></div>
+      </div>
+      <div class="cinfo-row">
+        <div class="cinfo-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="cinfo-text"><h4>Address</h4><p>Galhena Road, Welivita, Kaduwela</p></div>
+      </div>
+      <div class="contact-socials">
+        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+      </div>
+    </aside>
+
+    <!-- form -->
+    <div class="contact-form-wrap rv-right">
+      <form class="cform" id="contactForm">
+        <div class="field">
+          <label for="name"><i class="fas fa-user"></i> Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="field">
+          <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="field">
+          <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+        </div>
+        <div class="field">
+          <label for="message"><i class="fas fa-comment-dots"></i> Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold send-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+        <div class="form-success" id="formSuccess">
+          <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <p>Author: <span>Chanuki Semini</span></p>
+    <p>&copy; 2025 All rights reserved</p>
+    <div class="footer-socials">
+      <a href="www.linkedin.com/in/chanuki-semini" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/ChanukiSemini" class="social-btn"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/_.chanu_04._?igsh=ZmQ0YnA2ODhsZDVt&utm_source=qr" class="social-btn"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+document.getElementById('contactForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const s=document.getElementById('formSuccess');
+  s.style.display='flex'; this.reset();
+  setTimeout(()=>s.style.display='none',5000);
+});
+</script>
+</body>
+</html>
